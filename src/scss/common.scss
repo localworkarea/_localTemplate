@@ -1,0 +1,55 @@
+// LOCAL CODE =============================
+
+// ВИДЕО ИЗ ЮТЮБ =============
+.video-youtube {
+  background-color: #fff;
+  padding: toRem(10);
+  width: 100%;
+  @include adaptiveValue("max-width", 1000, 730,0,1920,1440.98);
+  // .video-youtube__body
+  &__body {
+    position: relative;
+    z-index: 2;
+    background-color: #000;
+    margin-inline: auto;
+    width: 100%;
+    aspect-ratio: 784/400;
+    box-shadow: 4px 4px 11px 0 rgba(0, 0, 0, 0.4);
+    iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      aspect-ratio: 784/400;
+    }
+  }
+  // .video-youtube__button
+  &__button {
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    @media (any-hover: hover){
+      &:hover{
+        &::before {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+      }
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      pointer-events: none;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image:url('../img/icons/play.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: transform .65s ease;
+      @include adaptiveValue("width", 100, 60,0,1400.98,480.98);
+      @include adaptiveValue("height", 100, 60,0,1400.98,480.98);
+    }
+    img {}
+  }
+}
+// =======================================================================

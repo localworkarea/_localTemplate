@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"LOCAL TEMPLATE | MY CODE"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+
+
+				<section class="page__section">
+					<div class="page__container">
+
+						<!-- Загрузка видео из ютюб при нажатии на фальш/кнопку -->
+						<div class="video-youtube">
+							<div class="video-youtube__body">
+								<button class="video-youtube__button" type="button" data-youtube="bYkynBA7lkA" aria-label="кнопка відкриття відео з youtube">
+									<img class="ibg" src="@img/poster.jpg" width="784" height="400" alt="poster video">
+								</button>
+							</div>
+						</div>
+
+
+					</div>
+				</section>
+
+
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,59 @@
+
+
+
+// LOCAL CODE =======================
+// для стилизации стандартного импута с type="date"
+input[type="date"] {
+	-webkit-appearance: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(30%);
+	width: 30px;
+	height: 30px;
+	&:focus {
+		filter: invert(100%);
+	}
+}
+// ===============================================
+
+
+
+
+// <BUTTONS>
+// Сніппет (HTML): btn
+// @import "button";
+
+// <INPUTS>
+// Сніппет (HTML): inp
+// @import "input";
+
+// <CHECK>
+// Сніппет (HTML): chk
+// @import "checkbox";
+
+// <RADIO>
+// Сніппет (HTML): opt
+// @import "radio";
+
+// <SELECT>
+// Сніппет (HTML): sel
+// @import "select";
+
+// <RATING>
+// Сніппет (HTML): rating
+// @import "rating";
+
+// <QUANTITY>
+// Сніппет (HTML): qa
+// @import "quantity";
+
+// <RANGE>
+// Сніппет (HTML):
+// @import "range";
+
+// <CALENDAR>
+// Сніппет (HTML):
+// @import "datepicker";
